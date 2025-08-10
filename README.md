@@ -1,6 +1,10 @@
 ﻿# Adding-items-Aion-PTS-server
 
- pip install pyodbc
+ How to install and use Adding-items-Aion-PTS-server:
+Create a folder with any name you want, open the folder in VS Code, install Python on your PC.
+Then, install with pip install pyodbc.
+Configure the User.py file with your SQL Server username, password, and info.
+Open the terminal and type python User.py.
 
 
 # Aion Server Download
@@ -17,3 +21,4 @@ Download the C++ server to run your Aion emulator:
 
 **Check out our Discord for support and updates:**  
 [Discord Atreia DEV ](https://discord.gg/bJZyeezspg)
+
