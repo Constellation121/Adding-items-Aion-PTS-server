@@ -1,3 +1,5 @@
+# Code created by Constellation121
+
 import pyodbc
 from datetime import datetime
 
@@ -5,24 +7,19 @@ from datetime import datetime
 def adicionar_item(conexao, char_id, name_id, amount=0, slot=0, warehouse=0):
     cursor = conexao.cursor()
     
-    
     if slot is None:
         slot = 0  
     if warehouse is None:
         warehouse = 0 
     
-    
     current_time = datetime.now()
     
-    
     print(f"char_id: {char_id}, name_id: {name_id}, amount: {amount}, slot: {slot}, warehouse: {warehouse}")
-    
     
     sql = '''
     INSERT INTO dbo.user_item (char_id, name_id, amount, slot, warehouse, create_date, update_date)
     VALUES (?, ?, ?, ?, ?, ?, ?)
     '''
-    
     
     parametros = (
         char_id,
@@ -35,10 +32,7 @@ def adicionar_item(conexao, char_id, name_id, amount=0, slot=0, warehouse=0):
     )
     
     try:
-        
         cursor.execute(sql, parametros)
-        
-        
         conexao.commit()
         print("Item inserido com sucesso.")
     except pyodbc.IntegrityError as e:
@@ -58,10 +52,8 @@ def conectar_bd():
 
 
 if __name__ == "__main__":
-   
     conn = conectar_bd()
     
- 
     adicionar_item(
         conn,
         char_id=1018,
@@ -71,5 +63,4 @@ if __name__ == "__main__":
         warehouse=0 # 'warehouse'
     )
     
-     
     conn.close()
