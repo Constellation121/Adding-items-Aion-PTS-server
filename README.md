@@ -1,4 +1,10 @@
-﻿# Adding-items-Aion-PTS-server
+
+ 🚀 **Join our community:**  
+[![Join Discord](https://img.shields.io/badge/Discord-Join%20Now-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/bJZyeezspg)
+ 
+ 
+ 
+ # Adding-items-Aion-PTS-server
 
 How to install and use Adding-items-Aion-PTS-server:
 
